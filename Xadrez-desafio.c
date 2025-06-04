@@ -2,10 +2,10 @@
 
 int main() {
 
-int torre, bispo, rainha, direcaotorre, direcaobisbo, direcaorainha;
+int torre, bispo, rainha, direcaotorre, direcaobisbo, direcaorainha, direcaocavalo;
 int avancotorre = 1;
 int avancobisbo = 1;
-
+int cavalo = 1;
 
 printf ("Para qual direção deseja mover a torre?\n 1. Vertical\n 2. horizontal\n");
 scanf ("%d", &direcaotorre);
@@ -67,7 +67,7 @@ default:
 }
 
 printf ("\n");
-printf ("Para qual direção deseja mover o bisbo?\n 1. Cima\n 2. Esquerda\n 3. Direita\n 4. Baixo\n 5. Cima/Esquerda\n 6. Cima/Direita\n");
+printf ("Para qual direção deseja mover a rainha?\n 1. Cima\n 2. Esquerda\n 3. Direita\n 4. Baixo\n 5. Cima/Esquerda\n 6. Cima/Direita\n");
 scanf ("%d", &direcaorainha);
 
 switch (direcaorainha)
@@ -119,7 +119,36 @@ default:
     break;
 }
 
+printf ("Para qual direção deseja mover o cavalo?\n 1. Cima/Direta\n 2. Cima/Esquerda\n");
+scanf ("%d", &direcaocavalo);
 
+switch (direcaocavalo)
+{
+case 1:
+    while (cavalo--)
+    {
+        for (int i = 0; i < 2; i++) {
+            printf ("Cima\n");
+    }
+        printf ("Direta\n");
+
+    }
+
+    
+    break;
+case 2:
+while (cavalo--)
+    {
+        for (int i = 0; i < 2; i++) {
+            printf ("Cima\n");
+    }
+        printf ("Esquerda\n");
+
+    }
+break;
+default:
+    break;
+}
 
 
 
